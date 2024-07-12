@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation 4-2-3-1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('terrain.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .terrain {
+            position: relative;
+            width: 80vw;
+            height: 80vh;
+        }
+        .joueur {
+            position: absolute;
+            width: 5%;
+            height: auto;
+        }
+        .gardien { top: 80%; left: 50%; transform: translate(-50%, -50%); }
+        .defenseur1 { top: 60%; left: 20%; transform: translate(-50%, -50%); }
+        .defenseur2 { top: 65%; left: 40%; transform: translate(-50%, -50%); }
+        .defenseur3 { top: 65%; left: 60%; transform: translate(-50%, -50%); }
+        .defenseur4 { top: 60%; left: 80%; transform: translate(-50%, -50%); }
+        .milieu1 { top: 40%; left: 30%; transform: translate(-50%, -50%); }
+        .milieu2 { top: 40%; left: 70%; transform: translate(-50%, -50%); }
+        .milieu_offensif1 { top: 15%; left: 25%; transform: translate(-50%, -50%); }
+        .milieu_offensif2 { top: 25%; left: 50%; transform: translate(-50%, -50%); }
+        .milieu_offensif3 { top: 15%; left: 75%; transform: translate(-50%, -50%); }
+        .attaquant { top: 5%; left: 50%; transform: translate(-50%, -50%); }
+    </style>
+</head>
+<body>
+    <div class="terrain">
+        <img src="joueur.png" alt="Gardien" class="joueur gardien">
+        <img src="joueur.png" alt="Défenseur 1" class="joueur defenseur1">
+        <img src="joueur.png" alt="Défenseur 2" class="joueur defenseur2">
+        <img src="joueur.png" alt="Défenseur 3" class="joueur defenseur3">
+        <img src="joueur.png" alt="Défenseur 4" class="joueur defenseur4">
+        <img src="joueur.png" alt="Milieu 1" class="joueur milieu1">
+        <img src="joueur.png" alt="Milieu 2" class="joueur milieu2">
+        <img src="joueur.png" alt="Milieu Offensif 1" class="joueur milieu_offensif1">
+        <img src="joueur.png" alt="Milieu Offensif 2" class="joueur milieu_offensif2">
+        <img src="joueur.png" alt="Milieu Offensif 3" class="joueur milieu_offensif3">
+        <img src="joueur.png" alt="Attaquant" class="joueur attaquant">
+    </div>
+</body>
+</html>
